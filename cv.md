@@ -7,3 +7,7 @@
 ---
 Bio:
 I learn Front-end Development with RSSchool and dream to get a job in EPAM!
+---
+Skills:
+*VS Code
+*Git, GitHub
