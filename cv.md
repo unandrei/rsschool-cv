@@ -1,6 +1,7 @@
 #Andrei Yun
 ---
 **##Contacts**
+**Discord: 
 **Phone: +79994693435**
 **Email: unandrei@yandex.ru**
 **Telegram: @unandrei**
@@ -13,5 +14,3 @@ Skills:
 *VS Code
 *Git, GitHub
 *Adobe Photoshop, Figma
----
-```
