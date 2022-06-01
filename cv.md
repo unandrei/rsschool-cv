@@ -1,7 +1,7 @@
 #Andrei Yun
 ---
 **##Contacts**
-**Discord: 
+**Discord: Resmi (@unandrei)**
 **Phone: +79994693435**
 **Email: unandrei@yandex.ru**
 **Telegram: @unandrei**
