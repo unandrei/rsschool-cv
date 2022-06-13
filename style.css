@@ -1,4 +1,284 @@
-head,
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	font-family: "Roboto", sans-serif;
+	list-style: none;
+}
+
 body {
-	font-weight: 20px;
+	background: #c4c4c4;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.header {
+	text-align: center;
+	font-size: 32px;
+	color: #0175b2;
+}
+
+main {
+	display: flex;
+	width: 800px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	padding: 10px;
+	border-bottom: 1px solid #0175b2;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 800px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	background: #fff;
+}
+.footer__git .fa-brands {
+	font-size: 50px;
+	color: #0175b2;
+}
+.footer__img {
+	width: 20%;
+}
+.resume__left-bottom + .resume__left-bottom {
+	border-bottom: 1px solid #0175b2;
+}
+
+.resume__right-bottom {
+	border-bottom: 1px solid #0175b2;
+}
+.resume__right-bottom:last-child {
+	border: none;
+}
+.resume__left {
+	width: 35%;
+	background: #26252d;
+}
+.resume__left-img {
+	width: 100%;
+}
+
+.resume__left-img img {
+	width: 100%;
+	display: block;
+}
+.resume__left-bottom {
+	padding: 20px 30px;
+}
+.resume__left-header {
+	display: none;
+}
+.resume__left-bottom-item {
+	padding: 20px 0;
+	border-bottom: 1px solid #0175b2;
+}
+.resume__left-bottom-item:last-child {
+	border-bottom: 0px;
+}
+
+.resume_profile-title {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 10px;
+	letter-spacing: 4px;
+}
+.resume_profile-info {
+	color: #84838b;
+	padding-top: 10px;
+	text-decoration: none;
+}
+
+.resume_profile-subtitle {
+	color: #fff;
+	margin-bottom: 2px;
+}
+.resume_skills {
+	display: flex;
+	flex-direction: column;
+}
+.skill_list {
+	padding: 0;
+	color: #84838b;
+}
+.skill_name {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+	align-items: center;
+}
+.skill_bar p {
+	position: relative;
+	width: 125px;
+	height: 20px;
+	background: #fff;
+}
+.skill_bar p span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #0175b2;
+	width: 100%;
+	height: 100%;
+}
+.resume__right {
+	width: 65%;
+	padding: 20px 40px;
+}
+.resume__right h3 {
+	color: #26252d;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 10px;
+	letter-spacing: 4px;
+}
+
+.resume__header-name {
+	font-size: 32px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 5px;
+	letter-spacing: 4px;
+}
+.resume__header-occupation {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.resume_data {
+	display: flex;
+}
+.resume_data-year {
+	padding-right: 35px;
+	width: 115px;
+	position: relative;
+}
+.resume_data-content p {
+	margin: 0;
+}
+.resume_data-content {
+	padding-left: 35px;
+	margin-bottom: 20px;
+	width: calc(100% - 115px);
+}
+.resume_data-year::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 0.5px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border: 1px solid #2625ed;
+	border-radius: 50%;
+}
+.resume_data-year::after {
+	content: "";
+	position: absolute;
+	top: 17px;
+	right: 5px;
+	width: 3px;
+	height: 90%;
+	background: #0175b2;
+}
+.resume_data:last-child .resume_data-year::after {
+	display: none;
+}
+
+.resume__right-interests .resume_profile-info {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.interests__icon {
+	font-size: 38px;
+	color: #0175b2;
+	margin-bottom: 10px;
+}
+
+/* адаптив под мобилки */
+@media screen and (max-width: 800px) {
+	.resume__left-img {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.resume__right-header {
+		display: none;
+	}
+	.resume__left-header {
+		display: block;
+	}
+	.resume__left-header .resume__header-name {
+		display: block;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		margin-bottom: 10px;
+		font-size: 20px;
+		color: #fff;
+	}
+	.resume__left-header .resume__header-occupation {
+		color: #84838b;
+		border-bottom: 1px solid #0175b2;
+		padding-bottom: 20px;
+	}
+	main {
+		width: 95%;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+		flex-direction: column;
+	}
+	footer {
+		width: 95%;
+		margin-top: 0;
+	}
+	.resume__left {
+		width: 100%;
+	}
+	.resume__right {
+		width: 100%;
+		padding: 0;
+	}
+	.resume__right-bottom {
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	/*.resume__right {
+		padding: 20px 30px;
+	}*/
+	.resume_data {
+		flex-direction: column;
+	}
+	.resume_data-year {
+		padding: 0;
+		margin-bottom: 5px;
+		widows: 100%;
+		color: #0175b2;
+	}
+	.resume_data-year::before,
+	.resume_data-year::after {
+		display: none;
+	}
+	.resume_data-content {
+		width: 100%;
+		padding: 0;
+	}
+	.interests__icon {
+		font-size: 24px;
+	}
+	.footer__git .fa-brands {
+		font-size: 24px;
+	}
 }
