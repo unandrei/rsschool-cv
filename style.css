@@ -20,9 +20,31 @@ body {
 main {
 	display: flex;
 	width: 800px;
-	margin: 50px auto;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	background: #fff;
 	padding: 10px;
+	border-bottom: 1px solid #0175b2;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 800px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	background: #fff;
+}
+.footer__git .fa-brands {
+	font-size: 50px;
+	color: #0175b2;
+}
+.footer__img {
+	width: 20%;
 }
 .resume__left-bottom + .resume__left-bottom {
 	border-bottom: 1px solid #0175b2;
@@ -185,6 +207,10 @@ main {
 
 /* адаптив под мобилки */
 @media screen and (max-width: 800px) {
+	.resume__left-img {
+		width: 50%;
+		margin: 0 auto;
+	}
 	.resume__right-header {
 		display: none;
 	}
@@ -206,8 +232,15 @@ main {
 	}
 	main {
 		width: 95%;
-		margin: 10px auto;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
 		flex-direction: column;
+	}
+	footer {
+		width: 95%;
+		margin-top: 0;
 	}
 	.resume__left {
 		width: 100%;
@@ -218,5 +251,34 @@ main {
 	}
 	.resume__right-bottom {
 		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	/*.resume__right {
+		padding: 20px 30px;
+	}*/
+	.resume_data {
+		flex-direction: column;
+	}
+	.resume_data-year {
+		padding: 0;
+		margin-bottom: 5px;
+		widows: 100%;
+		color: #0175b2;
+	}
+	.resume_data-year::before,
+	.resume_data-year::after {
+		display: none;
+	}
+	.resume_data-content {
+		width: 100%;
+		padding: 0;
+	}
+	.interests__icon {
+		font-size: 24px;
+	}
+	.footer__git .fa-brands {
+		font-size: 24px;
 	}
 }
