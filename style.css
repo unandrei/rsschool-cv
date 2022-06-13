@@ -14,6 +14,7 @@ body {
 .header {
 	text-align: center;
 	font-size: 32px;
+	color: #0175b2;
 }
 
 main {
@@ -45,8 +46,7 @@ main {
 .resume__left-bottom-item:last-child {
 	border-bottom: 0px;
 }
-.resume_profile {
-}
+
 .resume_profile-title {
 	color: #fff;
 	text-transform: uppercase;
@@ -60,10 +60,7 @@ main {
 	padding-top: 10px;
 	text-decoration: none;
 }
-.resume_address {
-}
-.resume_contact {
-}
+
 .resume_profile-subtitle {
 	color: #fff;
 	margin-bottom: 2px;
@@ -97,11 +94,21 @@ main {
 	height: 100%;
 }
 .resume__right {
+	width: 65%;
+	padding: 20px 40px;
+}
+.resume__right h3 {
+	color: #26252d;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 10px;
+	letter-spacing: 4px;
 }
 .resume__right-header {
 }
 .resume__header-name {
-	font-size: 20px;
+	font-size: 32px;
 	color: #000;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -109,22 +116,57 @@ main {
 	letter-spacing: 4px;
 }
 .resume__header-occupation {
+	font-size: 14px;
+	text-transform: uppercase;
 }
-.resume__right-education {
-}
+
 .resume_data {
+	display: flex;
 }
 .resume_data-year {
+	padding-right: 35px;
+	width: 115px;
+	position: relative;
+}
+.resume_data-content p {
+	margin: 0;
 }
 .resume_data-content {
+	padding-left: 35px;
+	margin-bottom: 20px;
+	width: calc(100% - 115px);
 }
-.resume__right-experience {
+.resume_data-year::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 0.5px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border: 1px solid #2625ed;
+	border-radius: 50%;
 }
-.resume__right-interests {
+.resume_data-year::after {
+	content: "";
+	position: absolute;
+	top: 17px;
+	right: 5px;
+	width: 3px;
+	height: 90%;
+	background: #0175b2;
 }
-.interests {
+.resume_data:last-child .resume_data-year::after {
+	display: none;
+}
+
+.resume__right-interests .resume_profile-info {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
 }
 .interests__icon {
-}
-.interests__data {
+	font-size: 38px;
+	color: #0175b2;
+	margin-bottom: 10px;
 }
