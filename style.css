@@ -46,6 +46,10 @@ footer {
 .footer__img {
 	width: 20%;
 }
+.footer__text {
+	font-size: 26px;
+	font-weight: bold;
+}
 .resume__left-bottom + .resume__left-bottom {
 	border-bottom: 1px solid #0175b2;
 }
